@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf From Tee To Green | The Truth About Your Swing Since 1986</title>
+    <meta name="description" content="38 years of honest golf instruction. From complete beginners to advanced players fine-tuning their swing. Lifetime memberships available for first 200 members.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-golf-ball"></i>
+                <span>GOLF FROM TEE TO GREEN</span>
+            </div>
+            <nav class="nav">
+                <a href="#learning-path">The Journey</a>
+                <a href="#videos">Free Videos</a>
+                <a href="#lessons">Lessons</a>
+                <a href="#membership">Membership</a>
+                <a href="#about">About</a>
+                <button class="btn-primary">BOOK A LESSON</button>
+            </nav>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-bg">
+            <img src="/front_page_hero.jpeg" alt="Golf instruction at its finest">
+        </div>
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="hero-title">
+                    <span class="gold-text">THE TRUTH</span><br>
+                    ABOUT YOUR SWING<br>
+                    <span class="small-text">38 Years of Honest Instruction</span>
+                </h1>
+                <p class="hero-subtitle">
+                    No fluff. No fads. Just what actually happens when you swing a golf club.<br>
+                    Whether you're gripping a club for the first time or fine-tuning your 20th year.
+                </p>
+                <div class="hero-ctas">
+                    <button class="btn-gold btn-large pulse" onclick="showBookingModal()">
+                        <i class="fas fa-calendar-alt"></i> FREE 15-MIN SWING ANALYSIS
+                    </button>
+                    <div class="urgency-banner">
+                        <i class="fas fa-fire"></i> Only <span class="counter" data-count="200">200</span> Lifetime Memberships Available
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOCIAL PROOF BAR -->
+    <section class="social-proof">
+        <div class="container">
+            <div class="proof-item">
+                <span class="number">38</span>
+                <span class="label">Years Teaching</span>
+            </div>
+            <div class="proof-item">
+                <span class="number">10,000+</span>
+                <span class="label">Students Trained</span>
+            </div>
+            <div class="proof-item">
+                <span class="number">1M+</span>
+                <span class="label">Follower Goal</span>
+            </div>
+            <div class="proof-item">
+                <span class="number">Since</span>
+                <span class="label">1986</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE LEARNING PATH -->
+    <section id="learning-path" class="learning-path">
+        <div class="container">
+            <h2 class="section-title">YOUR JOURNEY FROM TEE TO GREEN</h2>
+            <p class="section-subtitle">The truth about improvement? It's a path, not a trick. Walk it with me.</p>
+            
+            <div class="path-container">
+                <div class="path-node" data-step="1">
+                    <div class="node-circle">
+                        <i class="fas fa-golf-ball"></i>
+                    </div>
+                    <h3>THE TEE</h3>
+                    <p>Setup, grip, and the real physics of power. What actually matters in your driver swing.</p>
+                    <ul>
+                        <li>Stance & Alignment Truth</li>
+                        <li>Grip Pressure Science</li>
+                        <li>Backswing Myths Destroyed</li>
+                        <li>Power Generation Reality</li>
+                    </ul>
+                </div>
+                
+                <div class="path-line"></div>
+                
+                <div class="path-node" data-step="2">
+                    <div class="node-circle">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3>THE FAIRWAY</h3>
+                    <p>Approach shots, iron play, and strategic thinking. This is where scores are made.</p>
+                    <ul>
+                        <li>Ball Striking Fundamentals</li>
+                        <li>Distance Control Mastery</li>
+                        <li>Shot Shaping Reality</li>
+                        <li>Course Management Truth</li>
+                    </ul>
+                </div>
+                
+                <div class="path-line"></div>
+                
+                <div class="path-node" data-step="3">
+                    <div class="node-circle">
+                        <i class="fas fa-flag-checkered"></i>
+                    </div>
+                    <h3>THE GREEN</h3>
+                    <p>Short game secrets that actually work. Putting, chipping, and saving strokes.</p>
+                    <ul>
+                        <li>Putting Stroke Physics</li>
+                        <li>Green Reading Reality</li>
+                        <li>Chip Shot Mastery</li>
+                        <li>Mental Game Truth</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <button class="btn-primary btn-large" onclick="showPathModal()" style="margin-top: 3rem;">
+                <i class="fas fa-play-circle"></i> START YOUR JOURNEY TODAY
+            </button>
+        </div>
+    </section>
+
+    <!-- VIDEO SECTION -->
+    <section id="videos" class="video-section">
+        <div class="container">
+            <h2 class="section-title">LATEST VIDEO LESSONS</h2>
+            <p class="section-subtitle">Watch the truth in action. New videos every week.</p>
+            
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_1" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h3>The Truth About Driver Distance</h3>
+                    <p>Why 90% of amateurs lose 30 yards (it's not what you think)</p>
+                    <div class="video-stats">
+                        <span><i class="fas fa-eye"></i> 12.5K views</span>
+                        <span><i class="fas fa-thumbs-up"></i> 892</span>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_2" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h3>Chipping Myths That Cost You Strokes</h3>
+                    <p>Stop doing what the magazines tell you to do</p>
+                    <div class="video-stats">
+                        <span><i class="fas fa-eye"></i> 8.3K views</span>
+                        <span><i class="fas fa-thumbs-up"></i> 634</span>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_3" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h3>Reading Greens Without Guessing</h3>
+                    <p>The simple truth about break and speed</p>
+                    <div class="video-stats">
+                        <span><i class="fas fa-eye"></i> 15.7K views</span>
+                        <span><i class="fas fa-thumbs-up"></i> 1.2K</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="subscribe-box">
+                <h3>Never Miss a Lesson</h3>
+                <p>Get weekly video tips delivered to your inbox</p>
+                <form class="email-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn-primary">SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- LESSONS & MEMBERSHIP -->
+    <section id="lessons" class="pricing-section">
+        <div class="container">
+            <h2 class="section-title">CHOOSE YOUR PATH TO BETTER GOLF</h2>
+            <p class="section-subtitle">The truth is available at every level.</p>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>SINGLE LESSON</h3>
+                        <div class="price">$150</div>
+                        <p>One focused session</p>
+                    </div>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> 60-minute private lesson</li>
+                        <li><i class="fas fa-check"></i> Video swing analysis</li>
+                        <li><i class="fas fa-check"></i> Personalized drill plan</li>
+                        <li><i class="fas fa-check"></i> Follow-up email summary</li>
+                    </ul>
+                    <button class="btn-primary" onclick="showBookingModal()">BOOK NOW</button>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="card-header">
+                        <div class="badge">MOST POPULAR</div>
+                        <h3>LESSON PACKAGE</h3>
+                        <div class="price">$500</div>
+                        <p>4 lessons, maximum impact</p>
+                    </div>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> 4 x 60-minute lessons</li>
+                        <li><i class="fas fa-check"></i> Complete game assessment</li>
+                        <li><i class="fas fa-check"></i> Custom practice plan</li>
+                        <li><i class="fas fa-check"></i> Video library access</li>
+                        <li><i class="fas fa-check"></i> Text support between lessons</li>
+                    </ul>
+                    <button class="btn-gold" onclick="showBookingModal()">BOOK PACKAGE</button>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>LIFETIME MEMBERSHIP</h3>
+                        <div class="price">$1,997</div>
+                        <p>Never pay again</p>
+                    </div>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> Unlimited lesson videos</li>
+                        <li><i class="fas fa-check"></i> Monthly live Q&A</li>
+                        <li><i class="fas fa-check"></i> Swing analysis submissions</li>
+                        <li><i class="fas fa-check"></i> Member-only content</li>
+                        <li><i class="fas fa-check"></i> First access to new courses</li>
+                    </ul>
+                    <button class="btn-success" onclick="showMembershipModal()">
+                        <i class="fas fa-crown"></i> JOIN NOW
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">THE TRUTH STARTS HERE</h2>
+                    <h3>Since 1986, I've Been Teaching Golfers What Actually Works</h3>
+                    <p>I'm not here to sell you quick fixes or trendy swing theories. At 63 years old and after teaching over 10,000 students since 1986, I've seen every swing flaw, every instruction fad, and every frustrated golfer looking for real answers.</p>
+                    <p><strong>The truth?</strong> Most golf instruction makes the game more complicated than it needs to be. I started Golf From Tee To Green because I believe every golfer deserves honest, proven instruction that actually improves their game—not just their swing.</p>
+                    <p>Whether you're picking up a club for the first time or you've been playing for decades, I'll give you the truth about what takes place in your swing and how to make it work for you.</p>
+                    <button class="btn-gold" onclick="showStoryModal()">
+                        <i class="fas fa-play"></i> HEAR MY STORY
+                    </button>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/5732735/pexels-photo-5732735.jpeg" alt="Golf instructor teaching">
+                    <div class="experience-badge">
+                        <div class="years">38</div>
+                        <div class="label">YEARS</div>
+                        <div class="label">TEACHING</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>GOLF FROM TEE TO GREEN</h4>
+                    <p>The truth about your swing, from a teacher who's seen it all since 1986.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>QUICK LINKS</h4>
+                    <ul>
+                        <li><a href="#learning-path">The Journey</a></li>
+                        <li><a href="#videos">Video Library</a></li>
+                        <li><a href="#lessons">Lessons & Pricing</a></li>
+                        <li><a href="#membership">Lifetime Membership</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>FREE RESOURCES</h4>
+                    <ul>
+                        <li><a href="#">5 Swing Myths Debunked (PDF)</a></li>
+                        <li><a href="#">Green Reading Cheat Sheet</a></li>
+                        <li><a href="#">Practice Plan Generator</a></li>
+                        <li><a href="#">Equipment Truth Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>CONTACT</h4>
+                    <p><i class="fas fa-envelope"></i> coach@golffromteetogreen.com</p>
+                    <p><i class="fas fa-phone"></i> (555) TEE-TO-GREEN</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Golf From Tee To Green. Teaching the truth since 1986.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODALS -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('bookingModal')">&times;</span>
+            <h2>Book Your Free Swing Analysis</h2>
+            <p>15 minutes that could change your game forever.</p>
+            <form class="modal-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="tel" placeholder="Phone Number">
+                <select required>
+                    <option value="">Your Skill Level</option>
+                    <option>Complete Beginner</option>
+                    <option>1-3 Years Experience</option>
+                    <option>3-10 Years Experience</option>
+                    <option>Advanced Player</option>
+                </select>
+                <textarea placeholder="What's your biggest golf struggle?" rows="4"></textarea>
+                <button type="submit" class="btn-gold">SCHEDULE MY FREE ANALYSIS</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
