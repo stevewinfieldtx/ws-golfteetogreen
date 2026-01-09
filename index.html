@@ -142,7 +142,6 @@
     </section>
 
 <!-- VIDEO SECTION -->
-<!-- VIDEO SECTION -->
 <section id="videos" class="video-section">
     <div class="container">
         <h2 class="section-title">LATEST VIDEO LESSONS</h2>
@@ -151,33 +150,21 @@
         <div class="video-grid">
             <!-- Instagram Reel 1 -->
             <div class="video-card">
-                <div class="video-thumbnail">
-                    <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DTLge3UDcKn/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin:1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
-                        <div style="padding:16px;">Loading video...</div>
-                    </blockquote>
-                </div>
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DTLge3UDcKn/" data-instgrm-version="14"></blockquote>
                 <h3>The Truth About Driver Distance</h3>
                 <p>Why 90% of amateurs lose 30 yards</p>
             </div>
             
             <!-- Instagram Reel 2 -->
             <div class="video-card">
-                <div class="video-thumbnail">
-                    <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DTJzYl7jI7D/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin:1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
-                        <div style="padding:16px;">Loading video...</div>
-                    </blockquote>
-                </div>
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DTJzYl7jI7D/" data-instgrm-version="14"></blockquote>
                 <h3>Chipping Myths That Cost You Strokes</h3>
                 <p>Stop doing what the magazines tell you</p>
             </div>
             
             <!-- Instagram Reel 3 -->
             <div class="video-card">
-                <div class="video-thumbnail">
-                    <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DTGOXP3jSVz/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin:1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
-                        <div style="padding:16px;">Loading video...</div>
-                    </blockquote>
-                </div>
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DTGOXP3jSVz/" data-instgrm-version="14"></blockquote>
                 <h3>Reading Greens Without Guessing</h3>
                 <p>The simple truth about break and speed</p>
             </div>
@@ -192,6 +179,37 @@
             </form>
         </div>
     </div>
+
+    <!-- Instagram embed script + initialization -->
+    <script>
+        // Load Instagram embed script
+        !function(d,s,id){
+            var js,fjs=d.getElementsByTagName(s)[0];
+            if(!d.getElementById(id)){
+                js=d.createElement(s);
+                js.id=id;
+                js.src="https://www.instagram.com/embed.js";
+                fjs.parentNode.insertBefore(js,fjs);
+            }
+        }(document,"script","instagram-embed");
+        
+        // Force the embeds to render after page load
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                if (window.instgrm && window.instgrm.Embeds) {
+                    window.instgrm.Embeds.process();
+                    console.log("✅ Instagram embeds processed");
+                } else {
+                    console.log("⚠️ Instagram embed script not ready, retrying...");
+                    setTimeout(function() {
+                        if (window.instgrm && window.instgrm.Embeds) {
+                            window.instgrm.Embeds.process();
+                        }
+                    }, 2000);
+                }
+            }, 1000);
+        });
+    </script>
 </section>
 
     <!-- LESSONS & MEMBERSHIP -->
